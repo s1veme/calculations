@@ -1,0 +1,41 @@
+﻿<Window x:Class="GeoApp.Presentation.AddProject.AddProjectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeoApp.Presentation.AddProject"
+        mc:Ignorable="d"
+        Title="AddProjectWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Название:" Grid.Row="0" Margin="5"/>
+        <TextBox x:Name="textBoxName" Grid.Row="1" Margin="5"/>
+
+        <TextBlock Text="Заказчик ID:" Grid.Row="2" Margin="5"/>
+        <TextBox x:Name="textBoxCustomerId" Grid.Row="3" Margin="5"/>
+
+        <TextBlock Text="Прибор ID:" Grid.Row="4" Margin="5"/>
+        <TextBox x:Name="textBoxMeasurementId" Grid.Row="5" Margin="5"/>
+
+        <TextBlock Text="Начало:" Grid.Row="6" Margin="5"/>
+        <DatePicker x:Name="datePickerStartDate" Grid.Row="7" Margin="5"/>
+
+        <TextBlock Text="Конец:" Grid.Row="8" Margin="5"/>
+        <DatePicker x:Name="datePickerEndDate" Grid.Row="9" Margin="5"/>
+
+        <Button Content="Добавить" Grid.Row="10" Margin="5" Click="AddClick"/>
+    </Grid>
+</Window>

@@ -1,0 +1,36 @@
+﻿<Window x:Class="GeoApp.Presentation.EditProject.EditProjectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeoApp.Presentation.EditProject"
+        mc:Ignorable="d"
+        Title="EditProjectWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Название:" Grid.Row="0" Margin="5"/>
+        <TextBox x:Name="textBoxName" Grid.Row="1" Margin="5"/>
+
+        <TextBlock Text="Заказчик ID:" Grid.Row="2" Margin="5"/>
+        <TextBox x:Name="textBoxCustomerID" Grid.Row="3" Margin="5"/>
+
+        <TextBlock Text="Дата начала:" Grid.Row="4" Margin="5"/>
+        <DatePicker x:Name="datePickerStartDate" Grid.Row="5" Margin="5"/>
+
+        <TextBlock Text="Дата конца:" Grid.Row="6" Margin="5"/>
+        <DatePicker x:Name="datePickerEndDate" Grid.Row="7" Margin="5"/>
+
+        <Button Content="Сохранить" Grid.Row="8" Margin="5" Click="SaveClick"/>
+    </Grid>
+</Window>
